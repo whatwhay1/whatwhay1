@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1e1e2f; /* พื้นหลังสีดำ-น้ำเงิน */
+    color: #f8f8ff; /* สีข้อความเป็นสีครีม */
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f8f8ff; /* หัวข้อสีครีม */
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 220px;
+    background-color: #333; /* พื้นหลังของ input สีดำ */
+    color: #f8f8ff; /* ข้อความใน input สีครีม */
+    border: 1px solid #007BFF; /* ขอบสีน้ำเงิน */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus {
+    border-color: #004080; /* ขอบสีฟ้าเข้มเมื่อโฟกัส */
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF; /* ปุ่มสีน้ำเงิน */
+    color: #f8f8ff; /* ข้อความในปุ่มสีครีม */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* ปุ่มสีน้ำเงินเข้มเมื่อ hover */
+}
+
+#signup-link span {
+    color: #007BFF; /* ข้อความสีน้ำเงิน */
+    cursor: pointer;
+}
+
+#signup-link span:hover {
+    color: #0056b3; /* ข้อความสีน้ำเงินเข้มเมื่อ hover */
+}
+
+#image-gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 5px;
+    border: 2px solid #007BFF; /* ขอบรูปสีน้ำเงิน */
+}
